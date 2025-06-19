@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      border-bottom: 1px solid #333;
+    }
+    .nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav a:hover {
+      color: #00cc99;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 100px);
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: #00cc99;
+    }
+    .content h3 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: gray;
+    }
+
+    .icons {
+      position: absolute;
+      right: 40px;
+      bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 1.4rem;
+    }
+    .icons i {
+      color: white;
+      transition: transform 0.3s, color 0.3s;
+      cursor: pointer;
+    }
+    .icons i:hover {
+      transform: scale(1.2);
+      color: #00cc99;
+    }
+
+    .lan {
+      position: absolute;
+      left: 40px;
+      bottom: 100px;
+      transform: rotate(90deg);
+      display: flex;
+      gap: 30px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: gray;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+      .nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .content h1 {
+        font-size: 2rem;
+      }
+      .icons {
+        right: 15px;
+        bottom: 20px;
+      }
+      .lan {
+        left: -20px;
+        bottom: 20px;
+        font-size: 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="navbar">
+      <div class="nav">
+        <a href="Aboutme.html">About</a>
+        <a href="Resume.html">Resume</a>
+        <a href="index.html">Portfolio</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Sushma Puttaswamy</h1>
+      <h3>I am a Developer</h3>
+    </div>
+
+    <div class="lan">
+      <span>ENG</span>
+      <span>KAN</span>
+    </div>
+
+    <div class="icons">
+  <a href="mailto:sushmaputtaswamy852@gmail.com" target="_blank" title="Email">
+    <i class="bi bi-envelope-fill"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/sushma-puttaswamy" target="_blank" title="LinkedIn">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="https://github.com/SushmaPuttaswamy2024" target="_blank" title="GitHub">
+    <i class="bi bi-github"></i>
+  </a>
+</div>
+
+  </div>
+</body>
+</html>

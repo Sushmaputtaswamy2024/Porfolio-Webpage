@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+
+    .X {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      font-size: 30px;
+    }
+    .X a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .X a:hover {
+      color: #00cc99;
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .heading h4 {
+      color: gray;
+      font-weight: 100;
+      font-size: 14px;
+    }
+    .heading h1 {
+      font-size: 2.2rem;
+      color: white;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .side2 {
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .side2 h2 {
+      font-size: 1.5rem;
+      color: #00cc99;
+    }
+
+    .side2 p {
+      font-size: 0.95rem;
+      color: gray;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-size: 0.95rem;
+    }
+
+    .line1, .line2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .line1 span, .line2 span {
+      width: 48%;
+    }
+
+    label {
+      font-weight: 600;
+      color: white;
+    }
+
+    .content {
+      margin-left: 10px;
+      color: #ccc;
+    }
+
+    #email {
+      color: #00cc99;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .bottom button {
+      background-color: #00cc99;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .bottom button:hover {
+      background-color: #00b386;
+    }
+
+    .bottom button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      font-size: 1.2rem;
+    }
+
+    .icons i {
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .icons i:hover {
+      transform: scale(1.2);
+      color: #00cc99;
+    }
+
+    @media (max-width: 768px) {
+      .line1, .line2 {
+        flex-direction: column;
+      }
+      .line1 span, .line2 span {
+        width: 100%;
+      }
+      .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="X"><a href="Template.html">X</a></div>
+
+  <div class="heading">
+    <h4>Get to know me</h4>
+    <h1>About Me</h1>
+  </div>
+
+  <div class="main">
+    <div class="side2">
+      <h2>I'm Sushma Puttaswamy, a Visual Web Developer and Java Developer</h2>
+      <p>
+        I am an aspiring software developer with a Bachelor’s degree in Computer Applications from ISBR College, Bangalore.
+        Currently pursuing a Java Full Stack certification at Dhee Coding Lab, I have hands-on experience with front-end
+        technologies like HTML, CSS, JavaScript, and basic React.js. During my internship at Techxonic Innovation, I contributed
+        to a fetal birth weight estimation project, developing dynamic and responsive user interfaces.
+        <br><br>
+        I am passionate about building interactive web applications and continuously enhancing my skills. Known for my strong
+        work ethic, adaptability, and commitment to learning, I aim to grow as a developer in a collaborative and innovative
+        environment.
+      </p>
+
+      <div class="form">
+        <div class="line1">
+          <span><label>Name:</label><span class="content">Sushma Puttaswamy</span></span>
+          <span><label>Email:</label><span class="content" id="email">sushmaputtaswamy852@gmail.com</span></span>
+        </div>
+        <div class="line2">
+          <span><label>Age:</label><span class="content">21</span></span>
+          <span><label>From:</label><span class="content">Bangalore</span></span>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <button><a href="Sushma_Puttaswamy_2024.pdf" download>Download CV</a></button>
+        <div class="icons">
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-github"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
